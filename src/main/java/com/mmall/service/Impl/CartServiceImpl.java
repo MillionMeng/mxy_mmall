@@ -9,7 +9,7 @@ import com.mmall.dao.CartMapper;
 import com.mmall.dao.ProductMapper;
 import com.mmall.pojo.Cart;
 import com.mmall.pojo.Product;
-import com.mmall.service.iCartService;
+import com.mmall.service.ICartService;
 import com.mmall.utils.BigDecimalUtil;
 import com.mmall.utils.PropertiesUtil;
 import com.mmall.vo.CartProductVo;
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.List;
 @Service("iCartService")
-public class CartServiceImpl implements iCartService {
+public class CartServiceImpl implements ICartService {
 
     @Autowired
     private CartMapper cartMapper;

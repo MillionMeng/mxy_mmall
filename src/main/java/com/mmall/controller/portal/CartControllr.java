@@ -4,7 +4,7 @@ import com.mmall.common.Const;
 import com.mmall.common.ResponseCode;
 import com.mmall.common.ServerResponse;
 import com.mmall.pojo.User;
-import com.mmall.service.iCartService;
+import com.mmall.service.ICartService;
 import com.mmall.vo.CartVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 public class CartControllr {
 
     @Autowired
-    private iCartService iCartService;
+    private ICartService iCartService;
 
     @RequestMapping("add.do")
     @ResponseBody
